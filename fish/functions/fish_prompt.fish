@@ -1,1 +1,1 @@
-/Users/chunza2542/.local/share/omf/themes/mars/fish_prompt.fish
+/Users/chunza2542/.local/share/omf/themes/eden/fish_prompt.fish

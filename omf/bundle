@@ -1,3 +1,13 @@
+package config
+package direnv
+package https://gitlab.com/lusiadas/feedback
+package spark
+package thefuck
+package title
+package vcs
 package wd
+package weather
+package yadd
 package z
-theme batman
+theme chain
+theme eden

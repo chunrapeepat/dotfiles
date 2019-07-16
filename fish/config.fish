@@ -14,3 +14,6 @@ alias gp="git push"
 alias catimg="catimg -f"
 alias git-client="tig"
 alias glog="git log --oneline --graph --color --all --decorate | emojify"
+alias t="tmux -u"
+
+source /Users/chunza2542/miniconda3/etc/fish/conf.d/conda.fish
