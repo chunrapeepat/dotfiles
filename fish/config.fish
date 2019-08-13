@@ -17,3 +17,10 @@ alias glog="git log --oneline --graph --color --all --decorate | emojify"
 alias t="tmux -u"
 
 source /Users/chunza2542/miniconda3/etc/fish/conf.d/conda.fish
+
+# Automate open tmux
+tmux -u
+
+# Fix pbpaste pbcopy bugs on tmux
+alias pbcopy="reattach-to-user-namespace pbcopy"
+alias pbpaste="reattach-to-user-namespace pbpaste | tmux load-buffer - && tmux paste-buffer"
