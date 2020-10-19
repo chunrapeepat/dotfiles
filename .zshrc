@@ -1,6 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 ZSH_DISABLE_COMPFIX="true"
+ENABLE_CORRECTION="true"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/chunza2542/.oh-my-zsh"
@@ -14,7 +15,21 @@ ZSH_THEME="robbyrussell"
 # Plugins
 plugins=(
 	git
+	wd
+	asdf
+	fd
+	fzf
+	gcloud
+	history
+	kubectl
+	node
+	npm
+	npx
+	tig
+	tmux
+	yarn
 	zsh-autosuggestions
+	zsh-syntax-highlighting
 )
 
 # Aliases
