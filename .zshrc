@@ -44,6 +44,8 @@ alias git-client="tig"
 alias glog="git log --oneline --graph --color --all --decorate | emojify"
 alias t="tmux -u"
 alias d="docker"
+alias vi="nvim"
+alias vim="nvim"
 
 # configuration
 [[ $TERM != "screen" ]] && exec tmux -u

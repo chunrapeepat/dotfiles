@@ -12,6 +12,7 @@ link_file config/alacritty ~/.config
 link_file config/git/.gitignore_global ~
 link_file config/git/.gitconfig ~
 link_file config/.vscode ~
+link_file config/config/nvim ~/.config
 
 # git ignore global
 git config --global core.excludesfile ~/.gitignore_global
