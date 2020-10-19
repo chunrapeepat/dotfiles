@@ -10,6 +10,7 @@ function link_file {
 link_file .zshrc ~
 link_file config/alacritty ~/.config
 link_file config/git/.gitignore_global ~
+link_file config/.vscode ~
 
 # git ignore global
 git config --global core.excludesfile ~/.gitignore_global
