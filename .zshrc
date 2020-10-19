@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+ZSH_DISABLE_COMPFIX="true"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/chunza2542/.oh-my-zsh"
@@ -30,7 +31,8 @@ alias glog="git log --oneline --graph --color --all --decorate | emojify"
 alias t="tmux -u"
 alias d="docker"
 
-# launch tmux at start up
-tmux -u
+# configuration
+[[ $TERM != "screen" ]] && exec tmux -u
+set -o vi
 
 source $ZSH/oh-my-zsh.sh

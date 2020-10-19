@@ -1,1 +1,0 @@
-/Users/chunza2542/.local/share/omf/themes/eden/fish_prompt.fish
