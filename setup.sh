@@ -1,20 +1,13 @@
 #!/bin/bash
 
 # Utilties Function
-function link_config {
-   ln -s $(pwd)/$1 ~/.config
-}
-
 function link_file {
-   ln -s $(pwd)/$1 ~/.config/$2
+   ln -s $(pwd)/$1 ~ 2> /dev/null
+   echo "[link_file] ✅ finished; created link to file $1"
 }
 
 # Link configulation files
-link_config alacritty
-link_config omf
-
-link_file fish/functions fish/functions
-link_file fish/config.fish fish/config.fish
+link_file .zshrc
 
 # Activate
-source ~/.config/fish/config.fish
+source ~/.zshrc 2> /dev/null
