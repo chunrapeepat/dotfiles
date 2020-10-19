@@ -8,8 +8,11 @@ function link_file {
 
 # Link configulation files
 link_file .zshrc ~
-link_file alacritty ~/.config
-cp functions/z.sh ~
+link_file config/alacritty ~/.config
+link_file config/git/.gitignore_global ~
+
+# git ignore global
+git config --global core.excludesfile ~/.gitignore_global
 
 # Activate
 source ~/.zshrc 2> /dev/null
