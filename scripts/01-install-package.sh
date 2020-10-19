@@ -6,4 +6,4 @@
 # install brew packages
 # brew bundle --verbose
 
-echo "✅ finished; installation of packages and applications!"
+echo "✅ finished; 01 - installation of packages and applications!"
