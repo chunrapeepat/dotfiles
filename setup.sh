@@ -9,6 +9,7 @@ function link_file {
 # Link configulation files
 link_file .zshrc ~
 link_file alacritty ~/.config
+cp functions/z.sh ~
 
 # Activate
 source ~/.zshrc 2> /dev/null
