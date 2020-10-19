@@ -1,0 +1,11 @@
+# This is Git's per-user configuration file.
+[user]
+	name = chunza2542
+	email = hello@thechun.dev
+	signingkey = 6347DAC217A6B465
+[core]
+	excludesfile = /Users/chunza2542/.gitignore_global
+[commit]
+	gpgsign = true
+[alias]
+	logs = log --show-signature

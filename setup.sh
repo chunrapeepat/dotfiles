@@ -1,20 +1,21 @@
 #!/bin/bash
 
 # Utilties Function
-function link_config {
-   ln -s $(pwd)/$1 ~/.config
-}
-
 function link_file {
-   ln -s $(pwd)/$1 ~/.config/$2
+   ln -s $(pwd)/$1 $2 2> /dev/null
+   echo "[link_file] ✅ finished; created link to $2/$1"
 }
 
 # Link configulation files
-link_config alacritty
-link_config omf
+link_file .zshrc ~
+link_file config/alacritty ~/.config
+link_file config/git/.gitignore_global ~
+link_file config/git/.gitconfig ~
+link_file config/.vscode ~
+link_file config/config/nvim ~/.config
 
-link_file fish/functions fish/functions
-link_file fish/config.fish fish/config.fish
+# git ignore global
+git config --global core.excludesfile ~/.gitignore_global
 
 # Activate
-source ~/.config/fish/config.fish
+source ~/.zshrc 2> /dev/null
