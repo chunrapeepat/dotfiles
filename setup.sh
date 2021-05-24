@@ -7,6 +7,7 @@ function link_file {
 }
 
 # Link configulation files
+rm ~/.zshrc 2> /dev/null
 link_file .zshrc ~
 link_file config/alacritty ~/.config
 link_file config/git/.gitignore_global ~
