@@ -6,6 +6,6 @@
 [core]
 	excludesfile = /Users/chunza2542/.gitignore_global
 [commit]
-	gpgsign = true
+	gpgsign = false
 [alias]
 	logs = log --show-signature
