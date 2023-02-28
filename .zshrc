@@ -45,7 +45,6 @@ alias t="tmux -u"
 alias d="docker"
 alias vi="nvim"
 alias vim="nvim"
-alias code="codium"
 
 # configuration
 [[ $TERM != "screen-256color" ]] && tmux -u
