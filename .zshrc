@@ -289,3 +289,12 @@ fi
 # end - z jump around
 
 source $ZSH/oh-my-zsh.sh
+
+# bun completions
+[ -s "/Users/chunza2542/.bun/_bun" ] && source "/Users/chunza2542/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+[ -f ~/.inshellisense/key-bindings.zsh ] && source ~/.inshellisense/key-bindings.zsh

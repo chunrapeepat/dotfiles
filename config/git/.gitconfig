@@ -9,3 +9,5 @@
 	gpgsign = false
 [alias]
 	logs = log --show-signature
+[diff]
+    external = difft
